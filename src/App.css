@@ -1,38 +1,83 @@
+* {
+  background: gainsboro;
+  color: black;
+  font-family: Poppins;
+}
+
 .App {
+/* display: grid; */
+  /* text-align: center; */
+}
+
+h1 {
   text-align: center;
+  font-weight: 900;
+  font-size: 60px;
+  color: #000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 100px;
+}
+
+.search-bar {
+  border: 1px solid black;
+  width: 50%;
+  height: 30px;
+  padding: 10px;
+  
+}
+
+
+
+ion-icon {
+  font-size: 30px;
+  background: #000;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: none;
+  padding: 0;
+height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-text{
+  text-align: center;
+}
+
+
+
+.container {
+ display: inline-block;
+ justify-content: space-around;
+ margin: 0;
+ 
+}
+
+.smiley{
+  font-size: 30px;
+}
+
+
+@media (max-width: 568px) {
+  .search-bar {
+    border: 1px solid black;
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+  } 
+  .container {
+    display: grid;
+  
+  
+   }
+  
+   .smiley{
+     font-size: 20px;
+   }
 }
